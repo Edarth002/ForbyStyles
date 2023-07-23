@@ -1,0 +1,433 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.img {
+    border-radius: 20px;
+
+}
+
+.main {
+    background-image: url(logo222.jpg);
+
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 200vh;
+    min-width: none;
+    font-weight: bolder;
+}
+
+body {
+
+    background-color: #fff;
+}
+
+
+
+.head {
+    display: flex;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    padding: center;
+
+}
+
+.nav ul li {
+    display: inline-block;
+    padding: 20px;
+    list-style-type: none;
+    text-align: right;
+
+}
+
+.nav ul li a {
+    color: gold;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: sans-serif;
+
+
+}
+
+.nav ul li::after {
+    content: " ";
+    width: 0%;
+    height: 3px;
+    display: block;
+    background: gold;
+    border-radius: 3px;
+}
+
+.nav ul li:hover::after {
+    width: 100%;
+    transition: 0.25s;
+}
+
+
+
+
+
+.logo img {
+    width: 200px;
+    border-radius: 20px;
+    margin-left: 10%;
+}
+
+.bod {
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    font-family: cursive;
+    font-style: oblique;
+    background-color: #fff;
+}
+
+.bod section {
+    font-size: 20px;
+    flex-direction: column;
+}
+
+.snd {
+    color: brown;
+    font-style: oblique;
+    margin-top: 20px;
+}
+
+.images img {
+    width: 250px;
+    height: 300px;
+    border-radius: 40px;
+    padding: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.section {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+
+}
+
+.logohead img {
+    width: 250px;
+    height: 300px;
+    border-radius: 40px;
+    padding: 30px;
+}
+
+
+
+
+.contacts ul li {
+    flex-direction: column;
+    list-style-type: none;
+    color: white;
+    padding: 20px;
+}
+
+.contacts ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.contacts img {
+    width: 40px;
+    height: 7vh;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.others ul li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.others ul li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+.others ul li a:hover {
+    color: gold;
+}
+
+
+.heading2 h2 {
+    font-size: 30px;
+    text-align: center;
+    color: gold;
+}
+
+.mostordered {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+
+.catalogue {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+
+}
+
+.catalogue img {
+    border-radius: 100px;
+    width: 100%;
+    height: 400px;
+}
+
+.catalogue p {
+    text-align: center;
+    flex-direction: column;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.end a {
+    position: relative;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 100px;
+    text-decoration: none;
+    align-content: left;
+
+}
+
+.end a {
+    color: black;
+    text-align: right;
+}
+
+.bt {
+    display: none;
+}
+
+
+/*The following code is for mobile responsive screens*/
+
+@media (max-width:700px) {
+
+    .nav {
+        background-color: gold;
+        width: 200px;
+        height: 200vh;
+        position: absolute;
+        border-radius: 5px;
+        top: 0%;
+        right: 0px;
+        text-align: left;
+        z-index: 3;
+        margin-right: none;
+    }
+
+    .nav ul li {
+        display: block;
+        text-align: left;
+    }
+
+    .nav ul li a {
+        color: white;
+
+    }
+
+
+    .nav ul {
+        padding: 2rem;
+    }
+
+    .bt {
+        display: block;
+        border: none;
+        color: black;
+        background: transparent;
+        font-size: 50px;
+    }
+
+    .logo img {
+        width: 100px;
+        border-radius: 10px;
+        margin-left: 10%;
+    }
+
+    .bod p {
+        font-size: 30px;
+    }
+
+    .bod section {
+        font-size: 20px;
+        flex-direction: column;
+    }
+
+    .images img {
+        width: 250px;
+        height: 300px;
+        border-radius: 40px;
+        padding: 30px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 20px;
+    }
+
+    .section {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+
+    }
+
+    .logohead img {
+        width: 70px;
+        height: 60px;
+        border-radius: 40px;
+        padding: 20px;
+    }
+
+
+
+
+    .contacts ul li {
+        flex-direction: column;
+        list-style-type: none;
+        color: white;
+        padding: 20px;
+    }
+
+    .contacts ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .contacts img {
+        width: 30px;
+        height: 6vh;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .others ul li {
+        list-style-type: none;
+        padding: 15px;
+    }
+
+    .others ul li a {
+        text-decoration: none;
+        color: white;
+        margin-right: 20px;
+    }
+
+    .others ul li a:hover {
+        color: gold;
+    }
+
+    .heading2 h2 {
+        font-size: 30px;
+        text-align: center;
+        color: gold;
+    }
+
+
+    .catalogue {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+
+    }
+
+    .catalogue img {
+        border-radius: 100px;
+        width: 100%;
+        height: 400px;
+        margin-left: 30%;
+    }
+
+    .catalogue p {
+        text-align: right;
+        flex-direction: column;
+        font-family: cursive;
+        font-style: oblique;
+        font-weight: bolder;
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .end a {
+        position: relative;
+        font-family: cursive;
+        font-style: oblique;
+        font-weight: bolder;
+        font-size: 20px;
+        margin-bottom: 100px;
+        text-decoration: none;
+        align-content: left;
+
+    }
+
+    .end a {
+        color: black;
+        text-align: right;
+    }
+
+    .catalogu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+    }
+
+    .catalogu img {
+        .catalogue img {
+            border-radius: 100px;
+            max-width: 100%;
+            max-height: 400px;
+        }
+    }
+
+
+
+}
